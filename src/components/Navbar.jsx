@@ -17,11 +17,15 @@ const Navbar = () => {
     return (
         <div className = 'Navbar'>
             <h1 className = 'header-text'>
-                Firebase Google Auth & Context
+                Video Calling App
             </h1>
             {user?.displayName ? ( 
-                <button onClick={handleSignOut}>Logout</button> 
-                ):( <Link to ='/signin'>Sign in</Link>)}
+                <button className = "LogoutButtonNav" onClick={handleSignOut}>Logout</button> 
+                ):( <Link className = "SignInRedirect" to ='/signin'>
+                        <button className = "LogoutButtonNav">
+                            Sign in
+                        </button>
+                    </Link>)}
 
 
         </div>

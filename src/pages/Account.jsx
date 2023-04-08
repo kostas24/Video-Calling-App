@@ -15,12 +15,10 @@ const Account = () => {
     }
 
     return (
-        <div>
+        <div className = "AccountDiv">
             <h1 className = "AccountText">Account</h1>
-            <div>
-            <p>Welcome, {user?.displayName}</p>
-            </div>
-            <button onClick= {handleSignOut} className = 'LogoutButton'>Logout</button>
+            <p className = "WelcomeText">Welcome, {user?.displayName}</p>
+            <button onClick= {handleSignOut} className = "LogoutButton">Logout</button>
         </div>
     );
 }

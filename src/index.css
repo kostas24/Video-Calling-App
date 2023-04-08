@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #DDDDDD;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+  font-style: bold;
+}
+
+.HomePageText {
+  text-align: center;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0074D9;
+    height: 20px;
+    padding: 30px 25px;
+    align-items: center;
+}
+
+.header-text {
+  color: #DDDDDD;
+}
+
+.SignInRedirect {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.AccountText {
+  text-align: center;
+}
+
+.WelcomeText {
+  text-align: center;
+}
+
+.AccountDiv {
+  text-align: center;
+}
+
+.SignInContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GoogleButton {
+  text-align: center;
+}
+
+.LogoutButton, .LogoutButtonNav {
+  color: #DDDDDD;
+  background-color: #001f3f;
+  border: solid;
+  font-size: 14px;
+  padding: 10px 10px;
+  border-color: #001f3f;
+  cursor: pointer;
 }
