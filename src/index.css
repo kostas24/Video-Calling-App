@@ -69,7 +69,7 @@ code {
   text-align: center;
 }
 
-.LogoutButton, .LogoutButtonNav {
+.logoutButton, .logoutButtonNav {
   color: #DDDDDD;
   background-color: #001f3f;
   border: solid;
@@ -78,3 +78,37 @@ code {
   border-color: #001f3f;
   cursor: pointer;
 }
+
+.vid {
+  position: relative;
+  background-color:black;
+  border-color: #38373A;
+  border-style: solid;
+}
+.vid3 {
+  position: relative;
+  display: grid; 
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 95%;
+  width: 95%;
+}
+
+.vid4 {
+  position: relative;
+  display: grid; 
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 95%;
+  width: 95%;
+}
+
+.wrapper {
+  background-color: #DDDDDD;
+  display: grid;
+  width: 90vw;
+  height: 90vh;
+}
+

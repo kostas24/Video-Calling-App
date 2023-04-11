@@ -7,6 +7,7 @@ import Signin from './pages/Signin';
 import { AuthContextProvider } from './context/AuthContext';
 import { Protected } from './components/Protected';
 
+
 function App() {
   return (
     <AuthContextProvider>
@@ -17,7 +18,7 @@ function App() {
         <Route path='/account' element ={
         <Protected>
           <Account />
-          </Protected>
+        </Protected>
         } 
         />
       </Routes>

@@ -20,9 +20,9 @@ const Navbar = () => {
                 Video Calling App
             </h1>
             {user?.displayName ? ( 
-                <button className = "LogoutButtonNav" onClick={handleSignOut}>Logout</button> 
+                <button className = "logoutButtonNav" onClick={handleSignOut}>Logout</button> 
                 ):( <Link className = "SignInRedirect" to ='/signin'>
-                        <button className = "LogoutButtonNav">
+                        <button className = "logoutButtonNav">
                             Sign in
                         </button>
                     </Link>)}
