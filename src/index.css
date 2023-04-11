@@ -79,32 +79,6 @@ code {
   cursor: pointer;
 }
 
-.vid {
-  position: relative;
-  background-color:black;
-  border-color: #38373A;
-  border-style: solid;
-}
-.vid3 {
-  position: relative;
-  display: grid; 
-  grid-template-columns: 100%;
-  justify-items: center;
-  align-items: center;
-  height: 95%;
-  width: 95%;
-}
-
-.vid4 {
-  position: relative;
-  display: grid; 
-  grid-template-columns: 100%;
-  justify-items: center;
-  align-items: center;
-  height: 95%;
-  width: 95%;
-}
-
 .wrapper {
   background-color: #DDDDDD;
   display: grid;
