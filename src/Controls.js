@@ -38,23 +38,17 @@ export default function Controls(props) {
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="center">
       <Grid item>
-        <Button
-          onClick={() => mute("audio")}
-        >
+        <Button onClick={() => mute("audio")}>
           {trackState.audio ? <MicIcon /> : <MicOffIcon />}
         </Button>
       </Grid>
       <Grid item>
-        <Button
-          onClick={() => mute("video")}
-        >
+        <Button onClick={() => mute("video")}>
           {trackState.video ? <VideocamIcon /> : <VideocamOffIcon />}
         </Button>
       </Grid>
       <Grid item>
-        <Button
-          onClick={() => leaveChannel()}
-        >
+        <Button onClick={() => leaveChannel()}>
           Leave
           <ExitToAppIcon />
         </Button>

@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "auth-headstarter",
   storageBucket: "auth-headstarter.appspot.com",
   messagingSenderId: "200837729533",
-  appId: "1:200837729533:web:457fb50cebf711334b4294"
+  appId: "1:200837729533:web:457fb50cebf711334b4294",
 };
 
 // Initialize Firebase
