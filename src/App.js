@@ -23,7 +23,14 @@ function App() {
             </Protected>
           }
         />
-        <Route path="/calendar" element={<CalScheduler />} />
+        <Route
+          path="/calendar"
+          element={
+            <Protected>
+              <CalScheduler />
+            </Protected>
+          }
+        />
       </Routes>
     </AuthContextProvider>
   );
