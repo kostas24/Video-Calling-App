@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { db } from "./firebase";
-import { getDocs, collection, addDoc, onSnapshot } from "firebase/firestore";
+import { collection, addDoc, onSnapshot } from "firebase/firestore";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -57,7 +57,7 @@ function CalScheduler() {
   return (
     <div>
       <div className="Scheduler">
-        <h1>Calendar</h1>
+        <h1 style={{ fontSize: "34px" }}>Calendar</h1>
         <div>
           <input
             type="text"

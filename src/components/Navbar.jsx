@@ -15,9 +15,15 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-      <h1 className="navbar-text">Video Calling App</h1>
+      <img
+        className="navbar-text"
+        src={require("../images/PSEUDOSTARTER.png")}
+      />
       {user?.displayName ? (
         <ul className="navList">
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li className="calButtonNav">Home</li>
+          </Link>
           <Link to="/calendar" style={{ textDecoration: "none" }}>
             <li className="calButtonNav">Calendar</li>
           </Link>

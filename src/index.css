@@ -21,10 +21,6 @@ code {
   font-style: bold;
 }
 
-.HomePageText {
-  text-align: center;
-}
-
 .Navbar {
   display: flex;
   justify-content: space-between;
@@ -34,8 +30,15 @@ code {
   align-items: center;
 }
 
+/* .navbar-text {
+  height: 80px;
+  width: 100px;
+  color: #dddddd;
+} */
+
 .navbar-text {
-  margin-bottom: 10px;
+  height: 80px;
+  width: 500px;
   color: #dddddd;
 }
 
@@ -48,16 +51,44 @@ code {
   text-decoration: none;
 }
 
-.AccountText {
-  text-align: center;
-}
-
-.WelcomeText {
-  text-align: center;
-}
-
+.AccountText,
+.WelcomeText,
 .AccountDiv {
   text-align: center;
+}
+
+.HomePageDiv {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.emailForm > input,
+.emailForm > textarea {
+  text-align: center;
+  font-size: 15px;
+  height: 20px;
+}
+
+.emailForm > button {
+  width: 120px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #0074d9;
+  color: white;
+  border-radius: 1em;
+  justify-self: center;
+}
+
+.emailForm {
+  display: grid;
+  grid-template-columns: 40%;
+  row-gap: 20px;
+
+  justify-self: center;
+  justify-content: center;
 }
 
 .SignInContainer {
@@ -74,7 +105,8 @@ code {
 .logoutButtonNav,
 .signinButtonNav,
 .calButtonNav,
-.accButtonNav {
+.accButtonNav,
+.homeButtonNav {
   color: #dddddd;
   background-color: #001f3f;
   border: solid;
@@ -119,10 +151,12 @@ li:hover {
 }
 
 .Scheduler {
-  /*text-align: center;*/
-  margin-left: 10px;
+  margin-left: 5px;
 }
-
+/* .SchedulerForm{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+ } */
 .addEvent {
   color: #dddddd;
   background-color: #001f3f;
@@ -130,9 +164,29 @@ li:hover {
   font-size: 14px;
   border-color: #001f3f;
   cursor: pointer;
-  margin: 10px 42px;
+  margin: 14px 42px;
 }
 
 .addEvent:hover {
   background-color: #0074d9;
+}
+
+.HomePageDiv > section {
+  justify-content: center;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 200px 30%;
+}
+
+.profile {
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px black;
+}
+.emailForm > .sendEmail {
+  color: #dddddd;
+  background-color: #001f3f;
+  border: solid;
+  font-size: 18px;
+  border-color: #001f3f;
+  cursor: pointer;
 }

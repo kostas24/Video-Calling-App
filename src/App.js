@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/signin" element={<Signin />} />
         <Route
           path="/account"
@@ -23,6 +24,7 @@ function App() {
             </Protected>
           }
         />
+
         <Route
           path="/calendar"
           element={

@@ -11,5 +11,5 @@ export const Protected = ({ children }) => {
 
   return children;
 
-  return <div>Protected</div>;
+  // return <div>Protected</div>;
 };

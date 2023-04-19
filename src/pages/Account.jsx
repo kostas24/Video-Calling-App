@@ -1,13 +1,11 @@
-import React from "react";
+import { React, useState } from "react";
 import { UserAuth } from "../context/AuthContext";
-import { useState } from "react";
 import { Button } from "@mui/material";
 import VideoCall from "../VideoCall";
 
 const Account = () => {
   const [inCall, setInCall] = useState(false);
   const { logOut, user } = UserAuth();
-
   const handleSignOut = async () => {
     try {
       await logOut();
@@ -16,13 +14,13 @@ const Account = () => {
     }
   };
 
+  console.log(user);
   return (
     <div className="AccountDiv">
       <h1 className="AccountText">Account</h1>
-      <p className="WelcomeText">{user?.displayName}</p>
-      <button onClick={handleSignOut} className="logoutButton">
-        Logout
-      </button>
+      <img style={{ borderRadius: "50%" }} src={user?.photoURL} alt="Profile" />
+      <p>User: {user?.displayName}</p>
+      <p>Email: {user?.email}</p>
       <div className="App" style={{ height: "100%" }}>
         {inCall ? (
           <VideoCall setInCall={setInCall} />
@@ -30,6 +28,9 @@ const Account = () => {
           <Button onClick={() => setInCall(true)}>Join Call</Button>
         )}
       </div>
+      <button onClick={handleSignOut} className="logoutButton">
+        Logout
+      </button>
     </div>
   );
 };
