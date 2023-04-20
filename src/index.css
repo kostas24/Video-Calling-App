@@ -22,23 +22,17 @@ code {
 }
 
 .Navbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto;
   background-color: #0074d9;
-  height: 20px;
-  padding: 30px 25px;
   align-items: center;
 }
 
-/* .navbar-text {
-  height: 80px;
-  width: 100px;
-  color: #dddddd;
-} */
-
 .navbar-text {
+  justify-self: center;
   height: 80px;
-  width: 500px;
+  width: 100%;
+  max-width: 480px;
   color: #dddddd;
 }
 
@@ -53,8 +47,10 @@ code {
 
 .AccountText,
 .WelcomeText,
-.AccountDiv {
+.AccountDiv,
+.heading {
   text-align: center;
+  color: rgb(0, 31, 63);
 }
 
 .HomePageDiv {
@@ -85,8 +81,7 @@ code {
 .emailForm {
   display: grid;
   grid-template-columns: 40%;
-  row-gap: 20px;
-
+  row-gap: 5px;
   justify-self: center;
   justify-content: center;
 }
@@ -110,30 +105,31 @@ code {
   color: #dddddd;
   background-color: #001f3f;
   border: solid;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bold;
   padding: 10px 10px;
   border-color: #001f3f;
   cursor: pointer;
 }
 
-ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+.logoutButton {
+  border-radius: 5px;
 }
 
+ul {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  list-style-type: none;
+  overflow: hidden;
+}
 li {
   text-decoration: none;
+  text-align: center;
 }
 
-li:hover {
-  background-color: #0074d9;
-}
-
-.logoutButton:hover {
+li:hover,
+.logoutButton:hover,
+.sendEmail:hover {
   background-color: #0074d9;
 }
 
@@ -157,30 +153,48 @@ li:hover {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
  } */
-.addEvent {
+.addEvent,
+.removeEvent {
   color: #dddddd;
   background-color: #001f3f;
   border: solid;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   border-color: #001f3f;
   cursor: pointer;
-  margin: 14px 42px;
+  border-radius: 5px;
+}
+
+.addEvent {
+  padding: 5px 20px;
+  margin-top: 5px;
+  width: 150px;
+}
+
+.removeEvent {
+  margin-top: 1px;
+  padding: 5px 5px;
+  width: 150px;
 }
 
 .addEvent:hover {
   background-color: #0074d9;
 }
 
-.HomePageDiv > section {
-  justify-content: center;
-  display: grid;
-  row-gap: 30px;
-  grid-template-columns: 200px 30%;
+.removeEvent:hover {
+  background-color: #0074d9;
 }
 
 .profile {
   border-radius: 25px;
   box-shadow: 0px 0px 10px black;
+}
+
+.calendarFields {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .emailForm > .sendEmail {
   color: #dddddd;
@@ -189,4 +203,40 @@ li:hover {
   font-size: 18px;
   border-color: #001f3f;
   cursor: pointer;
+}
+
+.emailForm > input,
+textarea {
+  width: 300px;
+  justify-self: center;
+}
+
+.emailForm > textarea {
+  height: 50px;
+}
+
+@media (min-width: 981px) {
+  .HomePageDiv > section {
+    justify-content: center;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 200px 30%;
+  }
+
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0074d9;
+    height: 20px;
+    padding: 30px 25px;
+    align-items: center;
+  }
+  .navbar-text {
+    height: 80px;
+    width: 500px;
+    color: #dddddd;
+  }
+  .navList {
+    width: 600px;
+  }
 }

@@ -27,7 +27,9 @@ const Home = () => {
 
   return (
     <article className="HomePageDiv">
-      <h1 style={{ fontSize: "40px", color: "#001f3f" }}>Pseudostarter</h1>
+      <h1 className="heading" style={{ fontSize: "40px" }}>
+        Pseudostarter
+      </h1>
       <p style={{ fontSize: "20px" }}>
         Welcome to Pseudo Starter where you meet with various people to find and
         create your dream projects sooner. Create a Calendar, Video Calls, and

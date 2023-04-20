@@ -17,7 +17,9 @@ const Account = () => {
   console.log(user);
   return (
     <div className="AccountDiv">
-      <h1 className="AccountText">Account</h1>
+      <h1 className="AccountText" style={{ fontSize: "34px" }}>
+        Account
+      </h1>
       <img style={{ borderRadius: "50%" }} src={user?.photoURL} alt="Profile" />
       <p>User: {user?.displayName}</p>
       <p>Email: {user?.email}</p>

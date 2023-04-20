@@ -24,7 +24,9 @@ const Signin = () => {
   return (
     <div className="SignInDiv">
       <div className="SignInContainer">
-        <h1 className="Signin">Sign In</h1>
+        <h1 className="Signin" style={{ color: "#001f3f" }}>
+          Sign In
+        </h1>
         <div className="GoogleButton">
           <GoogleButton onClick={handleGoogleSignIn} />
         </div>

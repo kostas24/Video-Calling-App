@@ -18,16 +18,25 @@ const Navbar = () => {
       <img
         className="navbar-text"
         src={require("../images/PSEUDOSTARTER.png")}
+        alt="PSEUDOSTARTER"
       />
       {user?.displayName ? (
         <ul className="navList">
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link className="buttonNav" to="/" style={{ textDecoration: "none" }}>
             <li className="calButtonNav">Home</li>
           </Link>
-          <Link to="/calendar" style={{ textDecoration: "none" }}>
+          <Link
+            className="buttonNav"
+            to="/calendar"
+            style={{ textDecoration: "none" }}
+          >
             <li className="calButtonNav">Calendar</li>
           </Link>
-          <Link to="/account" style={{ textDecoration: "none" }}>
+          <Link
+            className="buttonNav"
+            to="/account"
+            style={{ textDecoration: "none" }}
+          >
             <li className="accButtonNav">Account</li>
           </Link>
           <li className="logoutButtonNav" onClick={handleSignOut}>
