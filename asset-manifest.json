@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Video-Calling-App/static/css/main.a27382df.css",
+    "main.css": "/Video-Calling-App/static/css/main.862e1546.css",
     "main.js": "/Video-Calling-App/static/js/main.96eac320.js",
     "static/media/Anthony.jpg": "/Video-Calling-App/static/media/Anthony.9f7e11308302e3f161e6.jpg",
     "static/media/Kos.jpg": "/Video-Calling-App/static/media/Kos.8584212d608f664db964.jpg",
     "static/media/PSEUDOSTARTER.png": "/Video-Calling-App/static/media/PSEUDOSTARTER.de853e2cebd463b0d0d2.png",
     "index.html": "/Video-Calling-App/index.html",
-    "main.a27382df.css.map": "/Video-Calling-App/static/css/main.a27382df.css.map",
+    "main.862e1546.css.map": "/Video-Calling-App/static/css/main.862e1546.css.map",
     "main.96eac320.js.map": "/Video-Calling-App/static/js/main.96eac320.js.map"
   },
   "entrypoints": [
-    "static/css/main.a27382df.css",
+    "static/css/main.862e1546.css",
     "static/js/main.96eac320.js"
   ]
 }
